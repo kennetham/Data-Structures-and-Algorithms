@@ -9,4 +9,7 @@ class App
 
   merge_sort = MergeSort.new
   merge_sort.sort(numbers)
+
+  heap = Heap.new
+  puts heap.max_heapify(numbers)
 end
