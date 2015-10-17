@@ -4,6 +4,9 @@ class App
   # Result
   result = []
 
+  x = 1
+  y = 2
+
   # Insertion Sort
   random_numbers = [5, 2, 8, 4, 6, 1, 10, 3, 9, 7, 11, 12]
   numbers = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
@@ -17,4 +20,17 @@ class App
   heap = Heap.new
   heap.sort(numbers.clone, result)
   p result
+
+  magic_swap = Swap.new
+  normal_result = magic_swap.normal(x, y)
+  p normal_result
+
+  xor_result = magic_swap.xor(x, y)
+  p xor_result
+
+  addsub_result = magic_swap.addsub(x, y)
+  p addsub_result
+
+  muldiv_result = magic_swap.muldiv(x, y)
+  p muldiv_result
 end
