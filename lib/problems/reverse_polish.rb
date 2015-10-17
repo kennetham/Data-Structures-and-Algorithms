@@ -45,6 +45,25 @@ class ReversePolish
     @stack
   end
 
+  def evaluate_v2(expression)
+    expression = expression.split
+    evaluation = []
+
+    expression.each do |number|
+      case number
+        when /\d/
+          evaluation.push(number.to_i)
+        when '+', '-', '*', '**', '/'
+          operands = evaluation.pop(2)
+          evaluation.push(operands[0].send(number, operands[1]))
+        else
+          raise "Error parsing"
+      end
+    end
+
+    evaluation
+  end
+
   def empty?
     @stack.empty?
   end

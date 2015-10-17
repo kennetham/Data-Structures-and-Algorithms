@@ -14,6 +14,7 @@ class App
   numbers = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
 
   evaluation = [2, 1, '+', 3, '*']
+  evaluate_expression = '4 13 5 / +'
 
   insertion_sort = InsertionSort.new
   insertion_sort.sort(random_numbers.clone)
@@ -45,5 +46,7 @@ class App
   # Reverse Polish
   reverse_polish = ReversePolish.new
   evaluated_results = reverse_polish.evaluate(evaluation)
+  evaluated_results_v2 = reverse_polish.evaluate_v2(evaluate_expression)
   puts evaluated_results
+  puts evaluated_results_v2
 end
