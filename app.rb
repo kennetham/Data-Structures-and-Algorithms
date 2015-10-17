@@ -7,7 +7,9 @@ class App
   x = 1
   y = 2
 
-  # Insertion Sort
+  num_ascending = [1, 2, 3, 4, 5, 6, 7]
+  rotation_step = 3
+
   random_numbers = [5, 2, 8, 4, 6, 1, 10, 3, 9, 7, 11, 12]
   numbers = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
 
@@ -33,4 +35,8 @@ class App
 
   muldiv_result = magic_swap.muldiv(x, y)
   p muldiv_result
+
+  # Rotate Array
+  rotate = RotateArray.new
+  rotate.rotate(num_ascending, rotation_step)
 end
