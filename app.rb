@@ -13,6 +13,8 @@ class App
   random_numbers = [5, 2, 8, 4, 6, 1, 10, 3, 9, 7, 11, 12]
   numbers = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
 
+  evaluation = [2, 1, '+', 3, '*']
+
   insertion_sort = InsertionSort.new
   insertion_sort.sort(random_numbers.clone)
 
@@ -39,4 +41,9 @@ class App
   # Rotate Array
   rotate = RotateArray.new
   rotate.rotate(num_ascending, rotation_step)
+
+  # Reverse Polish
+  reverse_polish = ReversePolish.new
+  evaluated_results = reverse_polish.evaluate(evaluation)
+  puts evaluated_results
 end

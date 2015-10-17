@@ -4,6 +4,7 @@ require_relative 'heap'
 require_relative 'swap'
 
 require_relative 'problems/rotate_array'
+require_relative 'problems/reverse_polish'
 
 class DSAG
 end
