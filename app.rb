@@ -47,6 +47,33 @@ class App
   reverse_polish = ReversePolish.new
   evaluated_results = reverse_polish.evaluate(evaluation)
   evaluated_results_v2 = reverse_polish.evaluate_v2(evaluate_expression)
-  puts evaluated_results
-  puts evaluated_results_v2
+  evaluated_results
+  p evaluated_results_v2
+
+  # Breadth-First-Search
+  node_1 = Node.new('1')
+  node_2 = Node.new('2')
+  node_3 = Node.new('3')
+  node_4 = Node.new('4')
+  node_5 = Node.new('5')
+  node_6 = Node.new('6')
+  node_7 = Node.new('7')
+  node_8 = Node.new('8')
+
+  graph = Graph.new
+  graph.add_edge(node_1, node_2)
+  graph.add_edge(node_2, node_3)
+  graph.add_edge(node_3, node_4)
+  graph.add_edge(node_4, node_5)
+  graph.add_edge(node_5, node_7)
+  graph.add_edge(node_3, node_6)
+  graph.add_edge(node_6, node_8)
+  graph.add_edge(node_2, node_4)
+  graph.add_edge(node_4, node_6)
+  graph.add_edge(node_7, node_8)
+
+  path = BFS.new(graph, node_2).shortest_path(node_8)
+  path.each do |v|
+    puts v
+  end
 end
