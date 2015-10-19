@@ -76,4 +76,12 @@ class App
   path.each do |v|
     puts v
   end
+
+  # Quick Sort
+  qs_numbers = random_numbers.clone
+  p qs_numbers
+
+  quick_sort = QuickSort.new
+  quick_sort.sort(qs_numbers, 0, random_numbers.length - 1)
+  p qs_numbers
 end
