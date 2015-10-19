@@ -96,4 +96,10 @@ class App
 
   quick_sort.tail_recursive_sort(trs_numbers, 0, random_numbers.length - 1)
   p trs_numbers
+
+  # Counting Sort
+  array_b = []
+  counting_sort = CountingSort.new
+  p counting_sort.sort(random_numbers.clone)
+  p counting_sort.counting_sort(random_numbers.clone, array_b, random_numbers.length)
 end
