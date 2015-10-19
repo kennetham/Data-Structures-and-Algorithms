@@ -90,4 +90,10 @@ class App
 
   quick_sort.randomized_sort(rqs_numbers, 0, random_numbers.length - 1)
   p rqs_numbers
+
+  trs_numbers = random_numbers.clone
+  p trs_numbers
+
+  quick_sort.tail_recursive_sort(trs_numbers, 0, random_numbers.length - 1)
+  p trs_numbers
 end

@@ -19,6 +19,16 @@ class QuickSort
     end
   end
 
+  public
+
+  def tail_recursive_sort(numbers, p, r)
+    while p < r
+      q = partition(numbers, p, r)
+      tail_recursive_sort(numbers, p, q - 1)
+      p = q + 1
+    end
+  end
+
   private
 
   def partition(numbers, p, r)
