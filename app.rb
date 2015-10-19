@@ -102,4 +102,8 @@ class App
   counting_sort = CountingSort.new
   p counting_sort.sort(random_numbers.clone)
   p counting_sort.counting_sort(random_numbers.clone, array_b, random_numbers.length)
+
+  # Bucket Sort
+  bucket_sort = BucketSort.new
+  p bucket_sort.sort(random_numbers.clone)
 end
