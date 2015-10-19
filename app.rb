@@ -84,4 +84,10 @@ class App
   quick_sort = QuickSort.new
   quick_sort.sort(qs_numbers, 0, random_numbers.length - 1)
   p qs_numbers
+
+  rqs_numbers = random_numbers.clone
+  p rqs_numbers
+
+  quick_sort.randomized_sort(rqs_numbers, 0, random_numbers.length - 1)
+  p rqs_numbers
 end
