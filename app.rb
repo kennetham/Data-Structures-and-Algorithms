@@ -12,6 +12,7 @@ class App
 
   random_numbers = [5, 2, 8, 4, 6, 1, 10, 3, 9, 7, 11, 12]
   numbers = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
+  min_numbers = [152, 2, 100, 68, 25, 31, 47, 5, 2, 214, 62, 33, 4, 92, 30, 54, 72, 1, 88, 11, 23, 729, 32, 85, 77, 12, 18]
 
   evaluation = [2, 1, '+', 3, '*']
   evaluate_expression = '4 13 5 / +'
@@ -106,4 +107,8 @@ class App
   # Bucket Sort
   bucket_sort = BucketSort.new
   p bucket_sort.sort(random_numbers.clone)
+
+  # Minimum
+  minimum = Minimum.new
+  p minimum.find_min(min_numbers.clone)
 end

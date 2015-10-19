@@ -8,6 +8,7 @@ require_relative 'bfs'
 require_relative 'quick_sort'
 require_relative 'counting_sort'
 require_relative 'bucket_sort'
+require_relative 'minimum'
 
 require_relative 'problems/rotate_array'
 require_relative 'problems/reverse_polish'
