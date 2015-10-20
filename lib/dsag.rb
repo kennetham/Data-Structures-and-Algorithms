@@ -18,6 +18,7 @@ require_relative 'problems/rotate_array'
 require_relative 'problems/reverse_polish'
 require_relative 'problems/rna_transcription'
 require_relative 'problems/roman_numerals'
+require_relative 'problems/word_count'
 
 class DSAG
 end

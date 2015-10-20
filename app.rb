@@ -15,6 +15,7 @@ class App
   min_numbers = [152, 2, 100, 68, 25, 31, 47, 5, 2, 214, 62, 33, 4, 92, 30, 54, 72, 1, 88, 11, 23, 729, 32, 85, 77, 12, 18]
 
   dna_dataset = 'GATGGAACTTGACTACGTAAATT'
+  sentences_dataset = 'lorem ipsum dolor sit amet, consectetur adipiscing elit. praesent a velit tempor, pulvinar odio vel, vehicula tellus. lorem ipsum dolor sit amit, lorem ipsum lorem ipsum lorem odio pulvinar a velit tempor.'
 
   evaluation = [2, 1, '+', 3, '*']
   evaluate_expression = '4 13 5 / +'
@@ -104,7 +105,7 @@ class App
   array_b = []
   counting_sort = CountingSort.new
   p counting_sort.sort(random_numbers.clone)
-  p counting_sort.counting_sort(random_numbers.clone, array_b, random_numbers.length)
+  p counting_sort.counting_sort(random_numbers.clone, array_b.clone, random_numbers.length)
 
   # Bucket Sort
   bucket_sort = BucketSort.new
@@ -145,6 +146,11 @@ class App
   rna_transcribe = RNATranscription.new
   p rna_transcribe.transcribe(dna_dataset.clone)
 
+  # Roman Numerals
   roman_numerals = RomanNumerals.new
   p roman_numerals.translate(2015)
+
+  # Word Count
+  word_count = WordCount.new
+  p word_count.count(sentences_dataset)
 end
