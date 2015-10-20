@@ -124,4 +124,11 @@ class App
   queue.enqueue(1)
   queue.enqueue(2)
   queue.dequeue
+
+  # Linkedlist
+  linked_list = LinkedList.new
+  linked_list.insert(5)
+  linked_list.insert(6)
+  linked_list.insert(8)
+  linked_list.search(6)
 end
