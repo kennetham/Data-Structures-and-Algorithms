@@ -111,4 +111,11 @@ class App
   # Minimum
   minimum = Minimum.new
   p minimum.find_min(min_numbers.clone)
+
+  # Stack
+  stack_numbers = num_ascending.clone
+  stack = Stack.new
+  stack.empty?(stack_numbers)
+  stack.push(stack_numbers, 8)
+  stack.pop(stack_numbers)
 end
