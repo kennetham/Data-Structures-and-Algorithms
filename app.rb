@@ -118,4 +118,10 @@ class App
   stack.empty?(stack_numbers)
   stack.push(stack_numbers, 8)
   stack.pop(stack_numbers)
+
+  # Queue
+  queue = Queue.new
+  queue.enqueue(1)
+  queue.enqueue(2)
+  queue.dequeue
 end
