@@ -14,6 +14,8 @@ class App
   numbers = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
   min_numbers = [152, 2, 100, 68, 25, 31, 47, 5, 2, 214, 62, 33, 4, 92, 30, 54, 72, 1, 88, 11, 23, 729, 32, 85, 77, 12, 18]
 
+  dna_dataset = 'GATGGAACTTGACTACGTAAATT'
+
   evaluation = [2, 1, '+', 3, '*']
   evaluate_expression = '4 13 5 / +'
 
@@ -138,4 +140,8 @@ class App
   max_subarray = DivideAndConquer.new
   max_sum = max_subarray.solve(array_numbers.clone)
   p max_sum[0]
+
+  # RNA Transcription
+  rna_transcribe = RNATranscription.new
+  p rna_transcribe.transcribe(dna_dataset.clone)
 end
