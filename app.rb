@@ -131,4 +131,11 @@ class App
   linked_list.insert(6)
   linked_list.insert(8)
   linked_list.search(6)
+
+  # Divide-and-Conquer
+  # Max Subarray
+  array_numbers = [-2, -5, 6, -2, -3, 1, 5, -6]
+  max_subarray = DivideAndConquer.new
+  max_sum = max_subarray.solve(array_numbers.clone)
+  p max_sum[0]
 end

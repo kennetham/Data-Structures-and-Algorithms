@@ -12,6 +12,7 @@ require_relative 'minimum'
 require_relative 'stack'
 require_relative 'queue'
 require_relative 'linked_list'
+require_relative 'divide_and_conquer'
 
 require_relative 'problems/rotate_array'
 require_relative 'problems/reverse_polish'
