@@ -144,4 +144,7 @@ class App
   # RNA Transcription
   rna_transcribe = RNATranscription.new
   p rna_transcribe.transcribe(dna_dataset.clone)
+
+  roman_numerals = RomanNumerals.new
+  p roman_numerals.translate(2015)
 end

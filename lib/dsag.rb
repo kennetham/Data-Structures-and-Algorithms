@@ -17,6 +17,7 @@ require_relative 'divide_and_conquer'
 require_relative 'problems/rotate_array'
 require_relative 'problems/reverse_polish'
 require_relative 'problems/rna_transcription'
+require_relative 'problems/roman_numerals'
 
 class DSAG
 end
