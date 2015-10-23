@@ -160,4 +160,9 @@ class App
   p max_sub.kadane_algorithm(mss_array_numbers.clone)
   p max_sub.max_subarray(mss_array_numbers.clone)
   p max_sub.max_subarray_v2(mss_array_numbers.clone)
+
+  # Maximum Product SubArray
+  mps_array_numbers = [6, -3, -10, 0, 2]
+  max_prod = MPS.new
+  p max_prod.kadane_algorithm(mps_array_numbers.clone)
 end
