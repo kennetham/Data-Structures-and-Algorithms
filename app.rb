@@ -138,6 +138,7 @@ class App
   # Divide-and-Conquer
   # Max Subarray
   array_numbers = [-2, -5, 6, -2, -3, 1, 5, -6]
+  mss_array_numbers = [-2, -3, 4, -1, -2, 1, 5, -3]
   max_subarray = DivideAndConquer.new
   max_sum = max_subarray.solve(array_numbers.clone)
   p max_sum[0]
@@ -153,4 +154,10 @@ class App
   # Word Count
   word_count = WordCount.new
   p word_count.count(sentences_dataset)
+
+  # Maximum Sum SubArray using Kadane's Algorithm
+  max_sub = MSS.new
+  p max_sub.kadane_algorithm(mss_array_numbers.clone)
+  p max_sub.max_subarray(mss_array_numbers.clone)
+  p max_sub.max_subarray_v2(mss_array_numbers.clone)
 end
