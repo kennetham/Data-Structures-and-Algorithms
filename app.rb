@@ -165,4 +165,12 @@ class App
   mps_array_numbers = [6, -3, -10, 0, 2]
   max_prod = MPS.new
   p max_prod.kadane_algorithm(mps_array_numbers.clone)
+
+  # Bits Manipulation
+  # Add operation
+  _x = 4
+  _y = 6
+  bits_arithmetic = Bits.new
+  p bits_arithmetic.add(_x, _y)
+  p bits_arithmetic.add_recursive(_x, _y)
 end
