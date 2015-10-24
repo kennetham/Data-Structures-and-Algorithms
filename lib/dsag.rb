@@ -22,6 +22,7 @@ require_relative 'problems/reverse_polish'
 require_relative 'problems/rna_transcription'
 require_relative 'problems/roman_numerals'
 require_relative 'problems/word_count'
+require_relative 'problems/check_if_array_elements_consecutive'
 
 class DSAG
 end

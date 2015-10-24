@@ -30,7 +30,6 @@ class MSS
       max_sub[i] = max
     end
 
-    p max_sub
     max
   end
 

@@ -173,4 +173,9 @@ class App
   bits_arithmetic = Bits.new
   p bits_arithmetic.add(_x, _y)
   p bits_arithmetic.add_recursive(_x, _y)
+
+  # Check if array elements are consecutive
+  consecutive_numbers = [2, 6, 1, 9, 3, 4, 7, 5, 8]
+  check_consecutive = CheckIfArrayElementsConsecutive.new
+  p check_consecutive.consecutive(consecutive_numbers.clone)
 end
