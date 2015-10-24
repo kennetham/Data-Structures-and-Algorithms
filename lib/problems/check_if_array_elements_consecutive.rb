@@ -46,8 +46,6 @@ Space Complexity: O(n)
       end
     end
 
-    puts "min #{_min} : max #{_max}"
-
     # Step 2 : Check if max - min + 1 == n,
     # then check all elements
     if _max - _min + 1 == n
