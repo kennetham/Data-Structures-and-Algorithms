@@ -186,4 +186,8 @@ class App
   _node.insert('node1', _node2)
   _node2.insert('node2', nil)
   puts _node.list(_node)
+
+  # Random Function
+  rand_func = RandomFunction.new
+  p rand_func.magic_func
 end
