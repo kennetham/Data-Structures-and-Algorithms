@@ -178,4 +178,11 @@ class App
   consecutive_numbers = [2, 6, 1, 9, 3, 4, 7, 5, 8]
   check_consecutive = CheckIfArrayElementsConsecutive.new
   p check_consecutive.consecutive(consecutive_numbers.clone)
+
+  # Test LinkedList Node
+  _node = LLNode.new
+  _node2 = LLNode.new
+  _node.insert('node1', _node2)
+  _node2.insert('node2', nil)
+  puts _node.list(_node)
 end

@@ -16,6 +16,7 @@ require_relative 'divide_and_conquer'
 require_relative 'mss'
 require_relative 'mps'
 require_relative 'bits'
+require_relative 'll_node'
 
 require_relative 'problems/rotate_array'
 require_relative 'problems/reverse_polish'
