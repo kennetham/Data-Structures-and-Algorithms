@@ -46,7 +46,8 @@ class App
 
   # Rotate Array
   rotate = RotateArray.new
-  rotate.rotate(num_ascending, rotation_step)
+  rotate.rotate(num_ascending.clone, rotation_step)
+  # p rotate.alternative_rotate(num_ascending.clone, rotation_step)
 
   # Reverse Polish
   reverse_polish = ReversePolish.new
@@ -190,4 +191,8 @@ class App
   # Random Function
   rand_func = RandomFunction.new
   p rand_func.magic_func
+
+  # Candy
+  min_candy = Candies.new
+  p min_candy.candy(num_ascending.clone)
 end

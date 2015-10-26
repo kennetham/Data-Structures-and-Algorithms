@@ -25,6 +25,7 @@ require_relative 'problems/roman_numerals'
 require_relative 'problems/word_count'
 require_relative 'problems/check_if_array_elements_consecutive'
 require_relative 'problems/random_function'
+require_relative 'problems/candies'
 
 class DSAG
 end
