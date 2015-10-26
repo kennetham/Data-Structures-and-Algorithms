@@ -19,4 +19,17 @@ class InsertionSort
 
     numbers
   end
+
+  def alternate_sort(numbers)
+    (1..numbers.length - 1).each do |i|
+      j = i
+
+      while j > 0 and numbers[j - 1] > numbers[j]
+        numbers[j], numbers[j - 1] = numbers[j - 1], numbers[j]
+        j -= 1
+      end
+    end
+
+    numbers
+  end
 end

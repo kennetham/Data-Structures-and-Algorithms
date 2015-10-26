@@ -21,7 +21,8 @@ class App
   evaluate_expression = '4 13 5 / +'
 
   insertion_sort = InsertionSort.new
-  insertion_sort.sort(random_numbers.clone)
+  p insertion_sort.sort(random_numbers.clone)
+  p insertion_sort.alternate_sort(random_numbers.clone)
 
   merge_sort = MergeSort.new
   merge_sort.sort(random_numbers.clone)
